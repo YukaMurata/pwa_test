@@ -6,6 +6,7 @@
   <meta charset="utf-8">
 
   <link rel="manifest" href="/pwa_test/json/manifest.json">
+  <link rel="manifest" href="manifest.webmanifest" />
 
   <title>pwa_test</title>
 
@@ -14,6 +15,8 @@
 <body>
   <p>testtesttesttest</p>
 
+  <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.6/pwacompat.min.js"
+    integrity="sha384-GOaSLecPIMCJksN83HLuYf9FToOiQ2Df0+0ntv7ey8zjUHESXhthwvq9hXAZTifA" crossorigin="anonymous"></script>
   <script>
     window.addEventListener('load', function () {
       if ('serviceWorker' in navigator) {
